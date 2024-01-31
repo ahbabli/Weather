@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="main.css">
+    <title>Weather</title>
+</head>
+<body class="bg-gradient-to-r from-blue-900 to-slate-900 ">
+                <div class="container  mx-auto">
+            <div class="imgs  w-4/12  mt-3 hidden md:flex  ">
+                <img class="img1" src="imgs/CLOUDS11 copy.svg" alt="">
+                <img class="img2" src="imgs/CLOUDS221 copy.svg" alt="">
+                <img class="img3" src="imgs/CLOUDS11 copy.svg" alt="">
+            
+            </div>
+            <div class="imgs2   w-96 m-auto  mt-3  md:hidden  ">
+                <img class="img12" src="imgs/sun phone.svg" alt="">
+                
+            
+            </div>
+        </div>
+            <div class="container2 w-fit m-auto">
+            <div class="border border-sky-300 mt-16 lg:mt-6 h-auto ">
+            <div class="weather text-center  mt-5 p-3 text-white">
+                <!-- <img class="weather-icon w-20 m-auto" src="imgs/sun.png" alt=""> -->
+                
+                <h2 class="text-2xl font-semibold  "> it's <span class="weath text-5xl lg:text-7xl font-bold  tracking-wider   ">Clear</span></h2>
+                <h1 class=" text-6xl"><span class="temp text-yellow-300 ">14</span>°C</h1>
+                <h2 class="city text-2xl w-fit m-auto px-4 rounded-xl">Martil</h2>
+                <div class="details flex justify-center space-x-16 lg:space-x-60 text-xl font-semibold mt-5 ">
+                    <div class="hum flex flex-row space-x-2 text-start">
+                        <img class="humid w-10 m-auto" src="imgs/humidity.png" alt="">
+                        <div class="">
+                        <p class="humidi">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                    </div>
+                    <div class="wind flex flex-row text-center space-x-2">
+                        <img class="wind-img w-10 m-auto" src="imgs/wind.png" alt="">
+                        <div>
+                        <p class="windi">15 km/h</p>
+                        <p>Wind speed</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                <!-- <div class="header text-slate-50 text-center ">
+                    <h1 class="text-3xl"> The Weather </h1>
+                   
+                </div> -->
+
+            <main class="w-fit m-auto rounded-2xl mt-  bg-sky-300">
+                <div class="container text-center mt-10 p-6 ">
+             <div class="search">  
+                        <input class="search-box p-2  text-start pl-3 rounded-full outline-none text-stone-800 " type="text" placeholder="Enter city name" spellcheck="false">
+                        <button><i class="btn fa-solid fa-magnifying-glass bg-slate-100 rounded-2xl p-2 hover:bg-lime-200 "></i></button>
+            </div>
+            <div class="error">
+                <p class="text-slate-50 mt-3 font-mono"> Invalid City name </p>
+            </div>
+           
+                </div>
+            </main>
+
+            <div class="footer mt-5 text-center">
+                <p class="text-xs text-slate-700">@ahbabli - 2024 . </p>
+            </div>
+            <script src="main.js"></script>
+            <!-- <script src="main2.js"></script> -->
+        </body>
+        </html>
